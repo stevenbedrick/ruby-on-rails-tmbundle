@@ -101,7 +101,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^\s*)(?=class\s+.+ActiveRecord::Base)</string>
+			<string>(^\s*)(?=class\s+.+ApplicationRecord)|(?=class\s+.+ActiveRecord::Base)</string>
 			<key>comment</key>
 			<string>Uses lookahead to match classes that (may) inherit from ActiveRecord::Base; includes 'source.ruby' to avoid infinite recursion</string>
 			<key>end</key>
